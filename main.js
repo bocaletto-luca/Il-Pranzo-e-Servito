@@ -4,10 +4,12 @@ document.addEventListener("DOMContentLoaded", function() {
   /* -- VARIABILI GLOBALI -- */
   let quizData = [];
   let currentQuestionIndex = 0;
+  let errorCount = 0; // Conteggio degli errori effettuati dal giocatore
+  const maxErrors = 10; // Numero massimo di errori consentiti prima di terminare la partita
   const officialCourses = ["Primo", "Secondo", "Formaggio", "Dolce", "Frutta"];
   let collectedCourses = [];
   
-  // Definizione dei 12 settori della ruota (la disposizione è fissa):
+  // Definizione dei 12 settori della ruota:
   // Disposizione: Primo, Secondo, Formaggio, Frutta, Dolce, Jolly, Primo, Secondo, Formaggio, Frutta, Dolce, Dieta
   const wheelSectors = [
     { course: "Primo", emoji: "🍝" },
@@ -25,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function() {
   ];
   
   let timerInterval;
-  const questionTime = 30; // 30 secondi per ogni domanda
+  const questionTime = 30; // 30 secondi per risposta
 
   /* -- ELEMENTI DOM -- */
   const welcomeScreen    = document.getElementById("welcomeScreen");
@@ -50,6 +52,9 @@ document.addEventListener("DOMContentLoaded", function() {
   const audioWrong   = document.getElementById("audioWrong");
   const audioWheel   = document.getElementById("audioWheel");
 
+  /* -- ATTIVA IL TEMA SCURO PER DEFAULT -- */
+  document.body.classList.add("dark-mode");
+
   /* -- FUNZIONE PER RANDOMIZZARE (Fisher–Yates) -- */
   function shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
@@ -66,7 +71,6 @@ document.addEventListener("DOMContentLoaded", function() {
       .then(data => {
         quizData = shuffleArray(data.questions);
         console.log("Quiz caricato e randomizzato:", quizData);
-        // Abilita il bottone di start una volta caricate le domande.
         startButton.disabled = false;
       })
       .catch(error => {
@@ -78,32 +82,31 @@ document.addEventListener("DOMContentLoaded", function() {
   /* -- CREA I SETTORI DELLA RUOTA (ruota posteriore) -- */
   function createWheelSectors() {
     wheelBack.innerHTML = "";
-    const wheelRadius = 125;               // Raggio del contenitore (250/2)
-    const sectorDiameter = 60;             // Dimensione fissa dei settori (uguale al foro)
+    const wheelRadius = 125;               // raggio del contenitore (250/2)
+    const sectorDiameter = 60;             // dimensione fissa dei settori (uguali al foro)
     const sectorRadius = sectorDiameter / 2; // 30px
     const offset = wheelRadius - sectorRadius; // 125 - 30 = 95px
-    const sectorAngle = 360 / wheelSectors.length; // 360/12 = 30°
+    const sectorAngle = 360 / wheelSectors.length; // 360°/12 = 30° per settore
     
     for (let i = 0; i < wheelSectors.length; i++) {
       let sector = document.createElement("div");
       sector.classList.add("sector");
       sector.style.width = sectorDiameter + "px";
       sector.style.height = sectorDiameter + "px";
-      
       let angle = i * sectorAngle;
-      // Applica la formula per posizionare correttamente ogni settore:
-      // 1. Centro: translate(-50%, -50%)
-      // 2. Ruota di 'angle' gradi
-      // 3. Trasla verticalmente di 'offset' pixel (verso l'esterno del centro)
-      // 4. Ruota indietro di 'angle' gradi per ripristinare l’orientamento, eventualmente con una correzione
+      // Calcola la trasformazione:
+      // - translate per centrare il div
+      // - ruota di 'angle' gradi
+      // - trasla verticalmente di 'offset' pixel
+      // - ruota indietro di 'angle' gradi aggiungendo una correzione di 180° se necessario
       let currentRotation = angle % 360;
       let correction = (currentRotation > 90 && currentRotation < 270) ? 180 : 0;
       sector.style.transform = `translate(-50%, -50%) rotate(${angle}deg) translate(0, -${offset}px) rotate(${-angle + correction}deg)`;
       sector.innerText = wheelSectors[i].emoji;
       wheelBack.appendChild(sector);
     }
-    // Imposta l'offset iniziale della ruota per far partire il gioco con il Jolly (all'indice 5) visibile nel foro:
-    // Jolly all'indice 5: 5 * 30 = 150° → per centrare al "0° visivo" è necessario: 360 – 150 = 210°
+    // Imposta la ruota per far partire il gioco con il settore Jolly (indice 5)
+    // Calcoliamo: 5 * 30 = 150°, per centrare viene usato l'offset: 360 - 150 = 210°
     wheelBack.style.transform = "rotate(210deg)";
   }
 
@@ -203,6 +206,12 @@ document.addEventListener("DOMContentLoaded", function() {
       element.classList.add("wrong");
       playAudio(audioWrong);
       alert("Risposta errata!");
+      errorCount++; // Incrementa il conteggio degli errori se la risposta è sbagliata
+      if (errorCount >= maxErrors) {
+        alert("Hai commesso 10 errori. Partita terminata!");
+        endGame();
+        return;
+      }
     }
     spinWheel(isCorrect);
   }
@@ -213,16 +222,15 @@ document.addEventListener("DOMContentLoaded", function() {
     const minSpins = 5;
     const randomAngle = Math.floor(Math.random() * 360);
     const finalAngle = (minSpins * 360) + randomAngle;
-    // L'offset iniziale 210° per far partire il disco con il Jolly nel foro
+    // L'offset iniziale di 210° per far partire la ruota centrata sul Jolly
     let totalRotation = finalAngle + 210;
     wheelBack.style.transform = `rotate(${totalRotation}deg)`;
     
     setTimeout(() => {
-      // Calcola l'angolo effettivo dopo la rotazione
+      // Calcola l'angolo effettivo
       let effectiveAngle = totalRotation % 360;
-      const sectorSize = 360 / wheelSectors.length; // ad esempio: 30°
-      // Abbiamo aggiunto un epsilon per evitare ambiguità ai bordi
-      const epsilon = 0.5;
+      const sectorSize = 360 / wheelSectors.length; // circa 30°
+      const epsilon = 0.5; // piccolo offset per snappare l'angolo lontano dal bordo
       let angleFromTop = (360 - effectiveAngle + epsilon) % 360;
       let sectorIndex = Math.round(angleFromTop / sectorSize) % wheelSectors.length;
       let outcome = wheelSectors[sectorIndex];
@@ -274,10 +282,10 @@ document.addEventListener("DOMContentLoaded", function() {
         alert("Complimenti! Hai completato il menu!");
         endGame();
       } else {
-        // Passa automaticamente alla prossima domanda dopo 2 secondi
+        // Dopo 2 secondi, passa alla domanda successiva
         setTimeout(nextQuestion, 2000);
       }
-    }, 3200); // Durata dell'animazione della ruota in millisecondi
+    }, 3200); // Durata dell'animazione della ruota
   }
 
   /* -- PROSSIMA DOMANDA -- */
@@ -302,8 +310,11 @@ document.addEventListener("DOMContentLoaded", function() {
     quizScreen.classList.remove("visible");
     resultScreen.style.display = "block";
     updateHighScore();
-    const uniqueCount = new Set(collectedCourses.map(c => c.course)).size;
-    if (uniqueCount >= officialCourses.length) {
+    
+    let uniqueCount = new Set(collectedCourses.map(c => c.course)).size;
+    if (errorCount >= maxErrors) {
+      document.getElementById("finalMessage").innerHTML = `Hai commesso 10 errori. Partita terminata. Hai raccolto ${uniqueCount} portate su ${officialCourses.length}.`;
+    } else if (uniqueCount >= officialCourses.length) {
       document.getElementById("finalMessage").innerHTML = "Complimenti! Hai completato il menu e vinto il gioco! 🍽️🎉";
     } else {
       document.getElementById("finalMessage").innerHTML = `Hai raccolto ${uniqueCount} su ${officialCourses.length} portate.`;
@@ -329,8 +340,10 @@ document.addEventListener("DOMContentLoaded", function() {
       alert("Attendere il caricamento delle domande.");
       return;
     }
+    // Ripristina variabili per una nuova partita
     collectedCourses = [];
     currentQuestionIndex = 0;
+    errorCount = 0;
     displayQuestion();
     quizScreen.classList.add("visible");
     welcomeScreen.classList.remove("visible");
@@ -339,6 +352,7 @@ document.addEventListener("DOMContentLoaded", function() {
   restartButton.addEventListener("click", () => {
     collectedCourses = [];
     currentQuestionIndex = 0;
+    errorCount = 0;
     displayQuestion();
     resultScreen.style.display = "none";
     quizScreen.classList.add("visible");
