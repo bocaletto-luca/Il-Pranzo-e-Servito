@@ -8,18 +8,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-kNUXg+yMZqr05aEtUvbFDYW/3BLkR5Oc6YLePJ3YV/2+c0Tq4BOudDTyoou+eZw6lgcpkn6Vt0QnXbocb5T1vQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-  <!-- SVG per la mask del cover che ritaglia il foro trasparente -->
-  <svg width="0" height="0">
-    <defs>
-      <!-- Il rettangolo copre l’intero cover (250×250). Il cerchio, con centro a (125,30) e raggio 30, sara ritagliato (nero) -->
-      <mask id="maskHole">
-        <rect x="0" y="0" width="250" height="250" fill="white" />
-        <circle cx="125" cy="30" r="30" fill="black" />
-      </mask>
-    </defs>
-  </svg>
-
   <style>
     /* RESET E STILI BASE */
     * {
@@ -29,28 +17,34 @@
     }
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #f8f9fa;
-      color: #333;
+      background: #1e1e1e;
+      color: #eee;
       line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
     }
     .container {
-      max-width: 900px;
+      max-width: 1200px;
       margin: 20px auto;
       padding: 20px;
-      background: #fff;
+      background: #2f2f2f;
       border-radius: 8px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+      flex: 1;
     }
     header {
       display: flex;
       align-items: center;
       justify-content: space-between;
       flex-wrap: wrap;
+      margin-bottom: 20px;
     }
     header h1 {
       flex: 1 100%;
       text-align: center;
       margin-bottom: 10px;
+      font-size: 2rem;
     }
     .button {
       padding: 10px 20px;
@@ -61,6 +55,7 @@
       cursor: pointer;
       font-size: 1em;
       margin: 5px;
+      transition: background 0.3s ease;
     }
     .button:hover {
       background: #0056b3;
@@ -69,18 +64,22 @@
     section { display: none; }
     .visible { display: block; }
     /* AREA QUIZ */
-    #questionContainer { margin: 20px 0; }
+    #questionContainer {
+      margin: 20px 0;
+      text-align: center;
+    }
     .option {
       padding: 10px;
-      border: 1px solid #ccc;
+      border: 1px solid #555;
       border-radius: 4px;
       margin: 5px 0;
-      background: #f0f0f0;
+      background: #3f3f3f;
       cursor: pointer;
+      transition: background 0.3s ease;
     }
-    .option:hover { background: #e0e0e0; }
-    .correct { background: #d4edda !important; border-color: #28a745 !important; }
-    .wrong   { background: #f8d7da !important; border-color: #dc3545 !important; }
+    .option:hover { background: #575757; }
+    .correct { background: #28a745 !important; }
+    .wrong   { background: #dc3545 !important; }
     /* TIMER, PROGRESSO, SCOREBOARD */
     #timer, #courseProgress, #scoreBoard {
       text-align: center;
@@ -94,8 +93,10 @@
       height: 250px;
       margin: 20px auto;
       overflow: hidden;
+      border: 3px solid #ccc;
+      border-radius: 50%;
     }
-    /* RUOTA POSTERIORE: il disco rotante */
+    /* RUOTA POSTERIORE: disco rotante */
     #wheel-back {
       position: absolute;
       width: 100%;
@@ -105,20 +106,20 @@
       transition: transform 3s ease-out;
       z-index: 0;
     }
-    /* RUOTA FRONTALE (COVER): layer bianco con mask SVG che ritaglia un foro trasparente */
+    /* RUOTA FRONTALE (COVER): layer bianco con mask SVG */
     #wheel-cover {
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
-      background: white;
+      background: #fff;
       border-radius: 50%;
       z-index: 1;
       mask: url(#maskHole);
       -webkit-mask: url(#maskHole);
     }
-    /* SETTORI DELLA RUOTA (disco rotante) */
+    /* SETTORI DELLA RUOTA */
     .sector {
       position: absolute;
       left: 50%;
@@ -128,27 +129,38 @@
       width: 60px;
       height: 60px;
       text-align: center;
-      font-size: 18px;
+      font-size: 1.2rem;
       line-height: 60px;
     }
-    /* SEZIONE LIFELINES */
-    #lifelines { text-align: center; margin-top: 15px; }
     /* MODAL ISTRUZIONI */
     #instructionsModal {
-      position: fixed;
-      top: 0; left: 0; right: 0; bottom: 0;
-      background: rgba(0, 0, 0, 0.6);
       display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.8);
       justify-content: center;
       align-items: center;
-      z-index: 100;
+      z-index: 1000;
+      padding: 20px;
     }
     #instructionsContent {
-      background: #fff;
+      background: #333;
       padding: 20px;
-      max-width: 600px;
-      width: 80%;
+      max-width: 800px;
+      width: 100%;
       border-radius: 8px;
+      color: #eee;
+    }
+    #instructionsContent h2 {
+      margin-bottom: 10px;
+      text-align: center;
+    }
+    #gameRules {
+      margin: 15px 0;
+      line-height: 1.5;
     }
     #closeInstructions {
       float: right;
@@ -159,43 +171,50 @@
       border-radius: 4px;
       cursor: pointer;
     }
+    /* FOOTER */
+    footer {
+      background: #1a1a1a;
+      padding: 15px 20px;
+      text-align: center;
+      color: #ccc;
+      font-size: 0.9rem;
+    }
     /* RESPONSIVE */
     @media (max-width: 600px) {
       .container { margin: 10px; padding: 10px; }
       #wheel-container { width: 200px; height: 200px; }
       .button { font-size: 0.9em; padding: 8px 16px; }
     }
-    /* TEMA SCURO */
-    .dark-mode {
-      background: #333;
-      color: #f8f9fa;
-    }
-    .dark-mode .container {
-      background: #444;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
-    }
-    .dark-mode .button { background: #0069d9; }
-    .dark-mode .option {
-      background: #555;
-      border-color: #666;
-    }
-    .dark-mode .option:hover { background: #666; }
   </style>
+  <!-- SVG per la mask del cover -->
+  <svg width="0" height="0">
+    <defs>
+      <mask id="maskHole">
+        <rect x="0" y="0" width="250" height="250" fill="white" />
+        <circle cx="125" cy="30" r="30" fill="black" />
+      </mask>
+    </defs>
+  </svg>
 </head>
 <body>
   <div class="container">
     <header>
       <h1>Il Pranzo è Servito - Digital Edition</h1>
-      <button id="instructionsButton" class="button" aria-label="Apri Istruzioni">
-        <i class="fas fa-info-circle"></i> Istruzioni
-      </button>
+      <button id="instructionsButton" class="button" aria-label="Apri Istruzioni"><i class="fas fa-info-circle"></i> Istruzioni</button>
       <div id="scoreBoard">Miglior Punteggio: <span id="highScore">0</span></div>
       <button id="toggleTheme" class="button" aria-label="Tema Scuro/Chiaro">Tema Scuro/Chiaro</button>
     </header>
     
     <!-- Schermata di Benvenuto -->
     <section id="welcomeScreen" class="visible">
-      <p>Benvenuto al quiz ispirato al mitico show televisivo "Il Pranzo è Servito"!</p>
+      <p>Benvenuto al quiz ispirato a "Il Pranzo è Servito – Digital Edition". In questo gioco risponderai a domande per guadagnare le portate necessarie per completare il tuo menu.</p>
+      <p>Regolamento:</p>
+      <ul>
+        <li>Raccogli tutte le portate (Primo, Secondo, Formaggio, Dolce, Frutta) per completare il menu e vincere.</li>
+        <li>Se commetti 10 errori prima di completare il menu, la partita terminerà automaticamente.</li>
+        <li>Hai 30 secondi per ogni domanda. Usa le lifelines se necessario per aiuti.</li>
+        <li>Dopo ogni risposta, gira la ruota per determinare la portata da vincere.</li>
+      </ul>
       <button id="startButton" class="button">Inizia Gioco</button>
     </section>
     
@@ -208,7 +227,7 @@
         <div id="optionsContainer"></div>
       </div>
       
-      <!-- Contenitore della Ruota a Doppio Livello -->
+      <!-- Contenitore della Ruota -->
       <div id="wheel-container">
         <div id="wheel-back"></div>
         <div id="wheel-cover"></div>
@@ -233,16 +252,26 @@
   <div id="instructionsModal">
     <div id="instructionsContent">
       <button id="closeInstructions" class="button">Chiudi</button>
-      <h2>Istruzioni</h2>
-      <p>
-        Obiettivo: Completa il menu rispondendo correttamente alle domande per guadagnare le portate (Primo, Secondo, Formaggio, Dolce, Frutta).<br>
-        Meccanica: Rispondi al quiz, usa le lifelines se necessario e fai girare la ruota. Il disco rotante (ruota posteriore) verrà coperto da un layer bianco (ruota frontale) che, tramite una mask SVG, mostra 
-        solo un foro trasparente (60px di diametro) posizionato a (125px,30px), rivelando esclusivamente la portata vincente. I settori speciali (Jolly e Dieta) attivano i relativi effetti.
+      <h2>Regolamento e Istruzioni</h2>
+      <p id="gameRules">
+        <strong>Obiettivo:</strong> Completa il menu rispondendo correttamente alle domande per guadagnare le portate: Primo, Secondo, Formaggio, Dolce e Frutta.<br>
+        <strong>Condizioni di Vittoria:</strong> Ottieni tutte le portate e "il pranzo è servito"!<br>
+        <strong>Condizioni di Sconfitta:</strong> La partita termina se commetti 10 errori prima di completare il menu.<br>
+        <strong>Modalità di Gioco:</strong><br>
+        - Hai 30 secondi per rispondere a ogni domanda.<br>
+        - Dopo aver risposto, gira la ruota per determinare la portata vinta. I settori speciali, come "Jolly" e "Dieta", attivano effetti particolari.<br>
+        - Utilizza le lifelines ("Chiedi al Pubblico" e "50-50") se necessario.<br>
+        <strong>Interfaccia:</strong> Il gioco visualizza una ruota a doppio livello con una cover che ritaglia un foro trasparente, così potrai vedere solo la portata vincente. L'area “Portate” aggiorna in tempo reale i piatti ottenuti.
       </p>
     </div>
   </div>
   
-  <!-- Elementi Audio (collega i file reali se disponibili) -->
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Bocaletto Luca. Tutti i diritti riservati.
+  </footer>
+  
+  <!-- Elementi Audio -->
   <audio id="audioCorrect" src="audio/correct.mp3"></audio>
   <audio id="audioWrong" src="audio/wrong.mp3"></audio>
   <audio id="audioWheel" src="audio/wheel.mp3"></audio>
