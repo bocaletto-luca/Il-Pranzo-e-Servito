@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Il Pranzo è Servito - Digital Edition</title>
+  <!-- FontAwesome per le icone -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-kNUXg+yMZqr05aEtUvbFDYW/3BLkR5Oc6YLePJ3YV/2+c0Tq4BOudDTyoou+eZw6lgcpkn6Vt0QnXbocb5T1vQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- SVG per la mask del cover che ritaglia il foro trasparente -->
+  <svg width="0" height="0">
+    <defs>
+      <!-- Il rettangolo copre l’intero cover (250×250). Il cerchio, con centro a (125,30) e raggio 30, sara ritagliato (nero) -->
+      <mask id="maskHole">
+        <rect x="0" y="0" width="250" height="250" fill="white" />
+        <circle cx="125" cy="30" r="30" fill="black" />
+      </mask>
+    </defs>
+  </svg>
+
+  <style>
+    /* RESET E STILI BASE */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f8f9fa;
+      color: #333;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    header h1 {
+      flex: 1 100%;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    .button {
+      padding: 10px 20px;
+      background: #007BFF;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 1em;
+      margin: 5px;
+    }
+    .button:hover {
+      background: #0056b3;
+    }
+    /* SEZIONI */
+    section { display: none; }
+    .visible { display: block; }
+    /* AREA QUIZ */
+    #questionContainer { margin: 20px 0; }
+    .option {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      margin: 5px 0;
+      background: #f0f0f0;
+      cursor: pointer;
+    }
+    .option:hover { background: #e0e0e0; }
+    .correct { background: #d4edda !important; border-color: #28a745 !important; }
+    .wrong   { background: #f8d7da !important; border-color: #dc3545 !important; }
+    /* TIMER, PROGRESSO, SCOREBOARD */
+    #timer, #courseProgress, #scoreBoard {
+      text-align: center;
+      margin: 10px 0;
+      font-weight: bold;
+    }
+    /* RUOTA A DOPPIO LIVELLO */
+    #wheel-container {
+      position: relative;
+      width: 250px;
+      height: 250px;
+      margin: 20px auto;
+      overflow: hidden;
+    }
+    /* RUOTA POSTERIORE: il disco rotante */
+    #wheel-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      transform-origin: 50% 50%;
+      transition: transform 3s ease-out;
+      z-index: 0;
+    }
+    /* RUOTA FRONTALE (COVER): layer bianco con mask SVG che ritaglia un foro trasparente */
+    #wheel-cover {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: white;
+      border-radius: 50%;
+      z-index: 1;
+      mask: url(#maskHole);
+      -webkit-mask: url(#maskHole);
+    }
+    /* SETTORI DELLA RUOTA (disco rotante) */
+    .sector {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      transform-origin: center;
+      width: 60px;
+      height: 60px;
+      text-align: center;
+      font-size: 18px;
+      line-height: 60px;
+    }
+    /* SEZIONE LIFELINES */
+    #lifelines { text-align: center; margin-top: 15px; }
+    /* MODAL ISTRUZIONI */
+    #instructionsModal {
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.6);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 100;
+    }
+    #instructionsContent {
+      background: #fff;
+      padding: 20px;
+      max-width: 600px;
+      width: 80%;
+      border-radius: 8px;
+    }
+    #closeInstructions {
+      float: right;
+      background: #dc3545;
+      color: #fff;
+      border: none;
+      padding: 5px 10px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    /* RESPONSIVE */
+    @media (max-width: 600px) {
+      .container { margin: 10px; padding: 10px; }
+      #wheel-container { width: 200px; height: 200px; }
+      .button { font-size: 0.9em; padding: 8px 16px; }
+    }
+    /* TEMA SCURO */
+    .dark-mode {
+      background: #333;
+      color: #f8f9fa;
+    }
+    .dark-mode .container {
+      background: #444;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+    }
+    .dark-mode .button { background: #0069d9; }
+    .dark-mode .option {
+      background: #555;
+      border-color: #666;
+    }
+    .dark-mode .option:hover { background: #666; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Il Pranzo è Servito - Digital Edition</h1>
+      <button id="instructionsButton" class="button" aria-label="Apri Istruzioni">
+        <i class="fas fa-info-circle"></i> Istruzioni
+      </button>
+      <div id="scoreBoard">Miglior Punteggio: <span id="highScore">0</span></div>
+      <button id="toggleTheme" class="button" aria-label="Tema Scuro/Chiaro">Tema Scuro/Chiaro</button>
+    </header>
+    
+    <!-- Schermata di Benvenuto -->
+    <section id="welcomeScreen" class="visible">
+      <p>Benvenuto al quiz ispirato al mitico show televisivo "Il Pranzo è Servito"!</p>
+      <button id="startButton" class="button">Inizia Gioco</button>
+    </section>
+    
+    <!-- Schermata del Quiz -->
+    <section id="quizScreen">
+      <div id="courseProgress">Portate: Nessuna</div>
+      <div id="timer"></div>
+      <div id="questionContainer">
+        <h2 id="questionText"></h2>
+        <div id="optionsContainer"></div>
+      </div>
+      
+      <!-- Contenitore della Ruota a Doppio Livello -->
+      <div id="wheel-container">
+        <div id="wheel-back"></div>
+        <div id="wheel-cover"></div>
+      </div>
+      
+      <!-- Sezione Lifelines -->
+      <div id="lifelines">
+        <button id="btnAudience" class="button">Chiedi al Pubblico</button>
+        <button id="btnFifty" class="button">50-50</button>
+      </div>
+    </section>
+    
+    <!-- Schermata dei Risultati -->
+    <section id="resultScreen">
+      <h2>Gioco Terminato!</h2>
+      <p id="finalMessage"></p>
+      <button id="restartButton" class="button">Rigioca</button>
+    </section>
+  </div>
+  
+  <!-- Modal Istruzioni -->
+  <div id="instructionsModal">
+    <div id="instructionsContent">
+      <button id="closeInstructions" class="button">Chiudi</button>
+      <h2>Istruzioni</h2>
+      <p>
+        Obiettivo: Completa il menu rispondendo correttamente alle domande per guadagnare le portate (Primo, Secondo, Formaggio, Dolce, Frutta).<br>
+        Meccanica: Rispondi al quiz, usa le lifelines se necessario e fai girare la ruota. Il disco rotante (ruota posteriore) verrà coperto da un layer bianco (ruota frontale) che, tramite una mask SVG, mostra 
+        solo un foro trasparente (60px di diametro) posizionato a (125px,30px), rivelando esclusivamente la portata vincente. I settori speciali (Jolly e Dieta) attivano i relativi effetti.
+      </p>
+    </div>
+  </div>
+  
+  <!-- Elementi Audio (collega i file reali se disponibili) -->
+  <audio id="audioCorrect" src="audio/correct.mp3"></audio>
+  <audio id="audioWrong" src="audio/wrong.mp3"></audio>
+  <audio id="audioWheel" src="audio/wheel.mp3"></audio>
+  
+  <script src="main.js"></script>
+</body>
+</html>

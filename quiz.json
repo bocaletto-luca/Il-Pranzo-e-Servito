@@ -1,0 +1,1094 @@
+{
+  "questions": [
+    {
+      "question": "Qual è la capitale d'Italia?",
+      "options": ["Roma", "Milano", "Napoli", "Torino"],
+      "answer": "Roma"
+    },
+    {
+      "question": "In che anno è stata proclamata la Repubblica Italiana?",
+      "options": ["1946", "1950", "1939", "1960"],
+      "answer": "1946"
+    },
+    {
+      "question": "Da quale regione italiana proviene il Parmigiano Reggiano?",
+      "options": ["Emilia-Romagna", "Lombardia", "Toscana", "Piemonte"],
+      "answer": "Emilia-Romagna"
+    },
+    {
+      "question": "Quale di questi piatti è tradizionale della cucina siciliana?",
+      "options": ["Arancini", "Pasta alla carbonara", "Risotto alla milanese", "Pizza Margherita"],
+      "answer": "Arancini"
+    },
+    {
+      "question": "Quale dolce italiano è caratterizzato da crema al mascarpone, savoiardi e caffè?",
+      "options": ["Tiramisù", "Cannoli", "Panettone", "Torrone"],
+      "answer": "Tiramisù"
+    },
+    {
+      "question": "Quale città è famosa per il suo Carnevale?",
+      "options": ["Venezia", "Milano", "Roma", "Firenze"],
+      "answer": "Venezia"
+    },
+    {
+      "question": "Il Chianti è un famoso vino prodotto in quale regione italiana?",
+      "options": ["Toscana", "Sicilia", "Veneto", "Lombardia"],
+      "answer": "Toscana"
+    },
+    {
+      "question": "Quale formaggio italiano viene preparato con latte di pecora e si definisce tipico della Toscana?",
+      "options": ["Pecorino Toscano", "Grana Padano", "Provolone", "Mozzarella"],
+      "answer": "Pecorino Toscano"
+    },
+    {
+      "question": "Quale piatto tipico è preparato con riso, zafferano e midollo di bue?",
+      "options": ["Risotto alla milanese", "Risotto al nero di seppia", "Risotto ai funghi", "Risotto alle verdure"],
+      "answer": "Risotto alla milanese"
+    },
+    {
+      "question": "Quale pasta breve è tradizionalmente usata per la Carbonara?",
+      "options": ["Spaghetti", "Penne", "Fusilli", "Tagliatelle"],
+      "answer": "Spaghetti"
+    },
+    {
+      "question": "Il prosciutto di Parma è prodotto in quale regione italiana?",
+      "options": ["Emilia-Romagna", "Lombardia", "Campania", "Veneto"],
+      "answer": "Emilia-Romagna"
+    },
+    {
+      "question": "Quali sono gli ingredienti principali del pesto alla genovese?",
+      "options": ["Basilico, pinoli, parmigiano, aglio", "Pomodoro, basilico, aglio, olio", "Rucola, noci, pecorino, aglio", "Spinaci, pinoli, mozzarella, aglio"],
+      "answer": "Basilico, pinoli, parmigiano, aglio"
+    },
+    {
+      "question": "Quale scultura è opera di Michelangelo?",
+      "options": ["Il David", "La Pietà", "Venere di Milo", "Apollo Belvedere"],
+      "answer": "Il David"
+    },
+    {
+      "question": "Quale festival cinematografico italiano è famoso in tutto il mondo?",
+      "options": ["La Mostra del Cinema di Venezia", "Festival di Cannes", "Sundance", "Berlino"],
+      "answer": "La Mostra del Cinema di Venezia"
+    },
+    {
+      "question": "Quale di questi monumenti si trova a Roma?",
+      "options": ["Il Colosseo", "La Torre di Pisa", "La Mole Antonelliana", "La Basilica di San Marco"],
+      "answer": "Il Colosseo"
+    },
+    {
+      "question": "Il vino Barolo è prodotto in quale regione italiana?",
+      "options": ["Piemonte", "Toscana", "Emilia-Romagna", "Campania"],
+      "answer": "Piemonte"
+    },
+    {
+      "question": "Qual è il gelato tipico italiano?",
+      "options": ["Gelato artigianale", "Frozen yogurt", "Sorbete", "Granita"],
+      "answer": "Gelato artigianale"
+    },
+    {
+      "question": "Quale dolce natalizio italiano è molto famoso?",
+      "options": ["Panettone", "Tiramisù", "Cannoli", "Biscotti"],
+      "answer": "Panettone"
+    },
+    {
+      "question": "Quale città italiana è considerata la culla del Rinascimento?",
+      "options": ["Firenze", "Venezia", "Milano", "Napoli"],
+      "answer": "Firenze"
+    },
+    {
+      "question": "Quale simbolo architettonico è tipico di Venezia?",
+      "options": ["Il Ponte di Rialto", "Il Colosseo", "La Mole Antonelliana", "La Torre Pendente di Pisa"],
+      "answer": "Il Ponte di Rialto"
+    },
+     {
+      "question": "Qual è il fiume più lungo d'Italia?",
+      "options": ["Po", "Adige", "Tevere", "Arno"],
+      "answer": "Po"
+    },
+    {
+      "question": "Quale piatto tipico della Sardegna è noto per il suo maialino arrosto?",
+      "options": ["Porceddu", "Culurgiones", "Malloreddus", "Fregola"],
+      "answer": "Porceddu"
+    },
+    {
+      "question": "Qual è il vulcano attivo più alto d'Italia?",
+      "options": ["Etna", "Vesuvio", "Stromboli", "Campi Flegrei"],
+      "answer": "Etna"
+    },
+    {
+      "question": "Qual è la regione italiana più piccola per estensione?",
+      "options": ["Valle d'Aosta", "Molise", "Basilicata", "Umbria"],
+      "answer": "Valle d'Aosta"
+    },
+    {
+      "question": "Quale città italiana è famosa per la tradizionale pizza napoletana?",
+      "options": ["Napoli", "Roma", "Milano", "Torino"],
+      "answer": "Napoli"
+    },
+    {
+      "question": "Quale prodotto tipico viene usato per produrre l'aceto balsamico tradizionale?",
+      "options": ["Uva", "Mele", "Miele", "Vino bianco"],
+      "answer": "Uva"
+    },
+    {
+      "question": "Qual è il nome dell'iconico teatro lirico di Milano?",
+      "options": ["La Scala", "Teatro dell'Opera", "Teatro Real", "La Fenice"],
+      "answer": "La Scala"
+    },
+    {
+      "question": "Quale dolce tipico della Sardegna si prepara con melassa, formaggio fresco e mandorle?",
+      "options": ["Seadas", "Cannoli", "Panforte", "Amaretti"],
+      "answer": "Seadas"
+    },
+    {
+      "question": "Quale lingua, oltre all'italiano, è tradizionalmente parlata in Sardegna?",
+      "options": ["Sardo", "Catalano", "Francese", "Tedesco"],
+      "answer": "Sardo"
+    },
+    {
+      "question": "Quale autore italiano ha scritto 'I Promessi Sposi'?",
+      "options": ["Alessandro Manzoni", "Giovanni Verga", "Italo Calvino", "Umberto Eco"],
+      "answer": "Alessandro Manzoni"
+    },
+    {
+      "question": "In che anno fu fondata l'Università di Bologna, la più antica del mondo?",
+      "options": ["1088", "1200", "950", "1453"],
+      "answer": "1088"
+    },
+    {
+      "question": "Quale famoso pittore del Rinascimento ha dipinto 'La Scuola di Atene'?",
+      "options": ["Raffaello", "Michelangelo", "Leonardo da Vinci", "Tiziano"],
+      "answer": "Raffaello"
+    },
+    {
+      "question": "Quale città italiana è famosa per il Museo Egizio?",
+      "options": ["Torino", "Roma", "Napoli", "Venezia"],
+      "answer": "Torino"
+    },
+    {
+      "question": "Quale squadra di calcio italiana ha vinto il maggior numero di Champions League?",
+      "options": ["AC Milan", "Juventus", "Inter", "Roma"],
+      "answer": "AC Milan"
+    },
+    {
+      "question": "Come vengono tradizionalmente preparate le orecchiette pugliesi?",
+      "options": ["Fatte a mano", "Prodotte industrialmente", "Lavorate a macchina", "Lavate in acqua salata"],
+      "answer": "Fatte a mano"
+    },
+    {
+      "question": "Quale celebre architetto barocco italiano è noto per il Baldacchino del Santo Sepolcro a Roma?",
+      "options": ["Gian Lorenzo Bernini", "Michelangelo", "Bramante", "Carlo Maderno"],
+      "answer": "Gian Lorenzo Bernini"
+    },
+    {
+      "question": "Quale zona panoramica di Napoli è rinomata per la vista sul Golfo?",
+      "options": ["Posillipo", "Vomero", "Chiaia", "Fuorigrotta"],
+      "answer": "Posillipo"
+    },
+    {
+      "question": "Quale città toscana è celebre per il suo centro storico e il Duomo, ed è patrimonio UNESCO?",
+      "options": ["Siena", "Firenze", "Pisa", "Lucca"],
+      "answer": "Siena"
+    },
+    {
+      "question": "Quale famoso chef italiano è alla guida dell'Osteria Francescana?",
+      "options": ["Massimo Bottura", "Gualtiero Marchesi", "Carlo Cracco", "Niko Romito"],
+      "answer": "Massimo Bottura"
+    },
+    {
+      "question": "Quale pizza è considerata tradizionale a Napoli?",
+      "options": ["Pizza Napoletana", "Pizza Romana", "Pizza Siciliana", "Pizza al taglio"],
+      "answer": "Pizza Napoletana"
+    },
+    {
+      "question": "Quale poeta italiano ha scritto 'I Sepolcri'?",
+      "options": ["Ugo Foscolo", "Giuseppe Ungaretti", "Sandro Penna", "Eugenio Montale"],
+      "answer": "Ugo Foscolo"
+    },
+    {
+      "question": "Quale famoso festival della canzone italiana si tiene a Sanremo ogni anno?",
+      "options": ["Festival di Sanremo", "Festival di Venezia", "Festival di Roma", "Festival di Napoli"],
+      "answer": "Festival di Sanremo"
+    },
+    {
+      "question": "Quale città italiana è famosa per il quartiere storico chiamato 'Quadrilatero Romano'?",
+      "options": ["Torino", "Milano", "Firenze", "Napoli"],
+      "answer": "Torino"
+    },
+    {
+      "question": "In che anno fu istituito il Giro d'Italia?",
+      "options": ["1909", "1929", "1960", "1898"],
+      "answer": "1909"
+    },
+    {
+      "question": "Quale scrittore italiano ha vinto il Premio Strega nel 2020?",
+      "options": ["Sandro Veronesi", "Erri De Luca", "Italo Calvino", "Andrea Camilleri"],
+      "answer": "Sandro Veronesi"
+    },
+    {
+      "question": "Quale città italiana è rinomata per i 'Palazzi dei Rolli'?",
+      "options": ["Genova", "Napoli", "Roma", "Firenze"],
+      "answer": "Genova"
+    },
+    {
+      "question": "Quale romanzo di Alessandro Baricco racconta la storia di 'Novecento'?",
+      "options": ["Novecento", "Oceano Mare", "Seta", "City"],
+      "answer": "Novecento"
+    },
+    {
+      "question": "Quale inventore italiano è noto per lo sviluppo della pila elettrica?",
+      "options": ["Alessandro Volta", "Enrico Fermi", "Guglielmo Marconi", "Antonio Meucci"],
+      "answer": "Alessandro Volta"
+    },
+    {
+      "question": "Quale gruppo di architetti ha progettato la Torre Velasca a Milano?",
+      "options": ["BBPR", "Renzo Piano", "Aldo Rossi", "Carlo Scarpa"],
+      "answer": "BBPR"
+    },
+    {
+      "question": "Di quale movimento artistico è considerato capofila il dipinto 'L'Urlo'?",
+      "options": ["Espressionismo", "Impressionismo", "Cubismo", "Surrealismo"],
+      "answer": "Espressionismo"
+    },
+    {
+      "question": "Qual è la montagna più alta d'Italia?",
+      "options": ["Monte Bianco", "Gran Paradiso", "Monte Rosa", "Etna"],
+      "answer": "Monte Bianco"
+    },
+    {
+      "question": "In che anno è stato fondato il Regno d'Italia?",
+      "options": ["1861", "1870", "1848", "1918"],
+      "answer": "1861"
+    },
+    {
+      "question": "Quale città italiana è famosa per la Torre di Pisa?",
+      "options": ["Pisa", "Milano", "Roma", "Firenze"],
+      "answer": "Pisa"
+    },
+    {
+      "question": "Qual è il primo presidente della Repubblica Italiana?",
+      "options": ["Enrico De Nicola", "Luigi Einaudi", "Giovanni Gronchi", "Sandro Pertini"],
+      "answer": "Enrico De Nicola"
+    },
+    {
+      "question": "Quale tradizione italiana si celebra il 15 agosto?",
+      "options": ["Ferragosto", "Carnevale", "Natale", "Pasqua"],
+      "answer": "Ferragosto"
+    },
+    {
+      "question": "Qual è il simbolo storico della Repubblica di Venezia?",
+      "options": ["Il leone alato", "L'aquila", "Il toro", "Il giglio"],
+      "answer": "Il leone alato"
+    },
+    {
+      "question": "Quale città italiana è famosa per il Palio?",
+      "options": ["Siena", "Firenze", "Roma", "Napoli"],
+      "answer": "Siena"
+    },
+    {
+      "question": "Chi ha scolpito il 'Mosè'?",
+      "options": ["Michelangelo", "Bernini", "Donatello", "Cellini"],
+      "answer": "Michelangelo"
+    },
+    {
+      "question": "Quale piatto tipico toscano è preparato con cavolo nero e fagioli?",
+      "options": ["Ribollita", "Minestrone", "Bagna cauda", "Pasta e fagioli"],
+      "answer": "Ribollita"
+    },
+    {
+      "question": "Il Carnevale di Viareggio è famoso per cosa?",
+      "options": ["Carri allegorici", "Maschere tradizionali", "Fuochi d’artificio", "Costumi stravaganti"],
+      "answer": "Carri allegorici"
+    },
+    {
+      "question": "In quale provincia si trovano le Grotte di Frasassi?",
+      "options": ["Ancona", "Ascoli Piceno", "Pesaro", "Macerata"],
+      "answer": "Ancona"
+    },
+    {
+      "question": "In che città si trova il Duomo di Milano?",
+      "options": ["Milano", "Torino", "Genova", "Roma"],
+      "answer": "Milano"
+    },
+    {
+      "question": "Quale castello piemontese è noto per i suoi splendidi giardini?",
+      "options": ["Castello di Racconigi", "Castello Sforzesco", "Castello di Fenis", "Castello della Manta"],
+      "answer": "Castello di Racconigi"
+    },
+    {
+      "question": "Chi ha scritto la 'Divina Commedia'?",
+      "options": ["Dante Alighieri", "Petrarca", "Boccaccio", "Tasso"],
+      "answer": "Dante Alighieri"
+    },
+    {
+      "question": "Quale fiume attraversa Roma?",
+      "options": ["Tevere", "Po", "Arno", "Adda"],
+      "answer": "Tevere"
+    },
+    {
+      "question": "Quale zona di Napoli è famosa per le pizzerie tradizionali?",
+      "options": ["Forcella", "Vomero", "Posillipo", "Chiaia"],
+      "answer": "Forcella"
+    },
+    {
+      "question": "In che anno fu lanciata l'Expo 2015 a Milano?",
+      "options": ["2015", "2010", "2020", "2005"],
+      "answer": "2015"
+    },
+    {
+      "question": "Quale città fu tradizionalmente fondata da Romolo?",
+      "options": ["Roma", "Venezia", "Milano", "Napoli"],
+      "answer": "Roma"
+    },
+    {
+      "question": "Quale festival musicale italiano si tiene a Sanremo?",
+      "options": ["Festival di Sanremo", "Rock in Roma", "MTV Unplugged", "Premio Tenco"],
+      "answer": "Festival di Sanremo"
+    },
+    {
+      "question": "Quale sport invernale è popolare nelle zone attorno a Torino?",
+      "options": ["Sci alpino", "Bobsleigh", "Curling", "Pattinaggio di velocità"],
+      "answer": "Sci alpino"
+    },
+    {
+      "question": "Quale piatto tradizionale a base di ossobuco e risotto è tipico di Milano?",
+      "options": ["Ossobuco alla Milanese", "Cotoletta alla Milanese", "Risotto alla Milanese", "Polenta e osei"],
+      "answer": "Ossobuco alla Milanese"
+    },
+    {
+      "question": "Quale città ospita il Festival dei Due Mondi?",
+      "options": ["Spoleto", "Perugia", "Roma", "Bari"],
+      "answer": "Spoleto"
+    },
+    {
+      "question": "In che anno fu ratificato il Trattato Lateranense?",
+      "options": ["1929", "1870", "1963", "1800"],
+      "answer": "1929"
+    },
+    {
+      "question": "Quale isola del Mediterraneo è nota per l'arcipelago vulcanico delle Eolie?",
+      "options": ["Isole Eolie", "Isole Egadi", "Isole Tremiti", "Isole Pontine"],
+      "answer": "Isole Eolie"
+    },
+    {
+      "question": "Chi progettò la cupola di Santa Maria del Fiore a Firenze?",
+      "options": ["Filippo Brunelleschi", "Leon Battista Alberti", "Gian Lorenzo Bernini", "Donato Bramante"],
+      "answer": "Filippo Brunelleschi"
+    },
+    {
+      "question": "I Musei Vaticani ospitano:",
+      "options": ["Pittura", "Scultura", "Arti decorative", "Tutte le precedenti"],
+      "answer": "Tutte le precedenti"
+    },
+    {
+      "question": "Quale stilista è associato al marchio Prada?",
+      "options": ["Miuccia Prada", "Versace", "Armani", "Dolce & Gabbana"],
+      "answer": "Miuccia Prada"
+    },
+    {
+      "question": "Quale città ospita il Museo Galileo?",
+      "options": ["Firenze", "Milano", "Torino", "Padova"],
+      "answer": "Firenze"
+    },
+    {
+      "question": "Quale condimento base italiano comprende pomodoro, basilico, aglio e olio?",
+      "options": ["Marinara", "Pesto", "Ragù", "Salsa di noci"],
+      "answer": "Marinara"
+    },
+    {
+      "question": "Il gelato artigianale italiano si distingue per:",
+      "options": ["Uso di ingredienti freschi", "Contenuto elevato di zucchero", "Consistenza molto densa", "Colori vibranti"],
+      "answer": "Uso di ingredienti freschi"
+    },
+    {
+      "question": "Quale città è celebre per i suoi canali e il Carnevale?",
+      "options": ["Venezia", "Milano", "Bologna", "Napoli"],
+      "answer": "Venezia"
+    },
+    {
+      "question": "Quale museo fiorentino ospita opere di Botticelli e Leonardo da Vinci?",
+      "options": ["Galleria degli Uffizi", "Palazzo Pitti", "Museo dell'Opera", "Galleria dell'Accademia"],
+      "answer": "Galleria degli Uffizi"
+    },
+    {
+      "question": "Quale dolce siciliano è preparato con ricotta e canditi?",
+      "options": ["Cassata", "Cannoli", "Granita", "Brioche con gelato"],
+      "answer": "Cassata"
+    },
+    {
+      "question": "In quale regione si trova il Parco Nazionale del Cilento?",
+      "options": ["Campania", "Puglia", "Sicilia", "Toscana"],
+      "answer": "Campania"
+    },
+    {
+      "question": "Quale poeta italiano è famoso per i suoi sonetti d'amore dedicati a Laura?",
+      "options": ["Petrarca", "Tasso", "Guccini", "Leopardi"],
+      "answer": "Petrarca"
+    },
+    {
+      "question": "Quale pasta è tradizionalmente usata per le lasagne?",
+      "options": ["Sfoglia", "Ravioli", "Tagliatelle", "Spaghetti"],
+      "answer": "Sfoglia"
+    },
+    {
+      "question": "Quale città è famosa per il Puccini Festival?",
+      "options": ["Lucca", "Pisa", "Milano", "Napoli"],
+      "answer": "Lucca"
+    },
+    {
+      "question": "Quale piatto veneto è preparato con riso e radicchio?",
+      "options": ["Risotto al radicchio", "Pasta al ragù", "Polenta", "Spaghetti all'arrabbiata"],
+      "answer": "Risotto al radicchio"
+    },
+    {
+      "question": "Quale città ospita il MAXXI, famoso museo d'arte contemporanea?",
+      "options": ["Roma", "Milano", "Torino", "Firenze"],
+      "answer": "Roma"
+    },
+    {
+      "question": "Chi ha scritto 'Il Gattopardo'?",
+      "options": ["Tomasi di Lampedusa", "Sandro Penna", "Italo Svevo", "Primo Levi"],
+      "answer": "Tomasi di Lampedusa"
+    },
+    {
+      "question": "Quale marchio italiano di automobili di lusso è conosciuto in tutto il mondo?",
+      "options": ["Ferrari", "Lamborghini", "Maserati", "Alfa Romeo"],
+      "answer": "Ferrari"
+    },
+    {
+      "question": "Quale sport è particolarmente popolare nelle Dolomiti?",
+      "options": ["Arrampicata", "Sci alpino", "Parapendio", "Mountain bike"],
+      "answer": "Arrampicata"
+    },
+    {
+      "question": "Quale via romana è nota come la Regina delle Strade d'Italia?",
+      "options": ["Via Appia", "Via Aurelia", "Via Flaminia", "Via Egnazia"],
+      "answer": "Via Appia"
+    },
+    {
+      "question": "Quale tradizione teatrale italiana utilizza i burattini in legno?",
+      "options": ["Opera dei pupi", "Teatro di figura", "Marionette", "Burattini moderni"],
+      "answer": "Opera dei pupi"
+    },
+    {
+      "question": "Quale città è famosa per il suo centro storico e il Palio, oltre che per la cucina tradizionale?",
+      "options": ["Siena", "Firenze", "Perugia", "Bologna"],
+      "answer": "Siena"
+    },
+    {
+      "question": "In quale regione si trova la Costiera Amalfitana?",
+      "options": ["Campania", "Calabria", "Sicilia", "Puglia"],
+      "answer": "Campania"
+    },
+    {
+      "question": "Quale scultore rinascimentale è noto per le sue opere in bronzo a Firenze?",
+      "options": ["Donatello", "Michelangelo", "Cellini", "Bernini"],
+      "answer": "Donatello"
+    },
+    {
+      "question": "Quale bevanda a base di caffè e latte è tipica della colazione italiana?",
+      "options": ["Capuccino", "Caffellatte", "Espresso", "Macchiato"],
+      "answer": "Capuccino"
+    },
+    {
+      "question": "Quale innovazione architettonica è attribuita a Renzo Piano?",
+      "options": ["Il design del Centre Pompidou", "La cupola di Firenze", "Il Duomo di Milano", "Le Colonne di San Lorenzo"],
+      "answer": "Il design del Centre Pompidou"
+    },
+    {
+      "question": "Quale città italiana è celebre per il Festival del Cinema di Venezia?",
+      "options": ["Venezia", "Roma", "Milano", "Firenze"],
+      "answer": "Venezia"
+    },
+    {
+      "question": "Quale agrume è tipico della Costiera Amalfitana utilizzato per produrre il limoncello?",
+      "options": ["Limone", "Arancia", "Mandarino", "Pompelmo"],
+      "answer": "Limone"
+    },
+    {
+      "question": "Quale scrittore italiano è autore di 'Il nome della rosa'?",
+      "options": ["Umberto Eco", "Italo Calvino", "Leonardo Sciascia", "Primo Levi"],
+      "answer": "Umberto Eco"
+    },
+    {
+      "question": "Quale stile architettonico caratterizza molti edifici storici di Venezia?",
+      "options": ["Gotico", "Rinascimentale", "Barocco", "Neoclassico"],
+      "answer": "Gotico"
+    },
+    {
+      "question": "Quale dolce tipico emiliano prevede l'uso di crema pasticcera e frutta candita?",
+      "options": ["Zuppa Inglese", "Torta della nonna", "Panforte", "Torta Paradiso"],
+      "answer": "Zuppa Inglese"
+    },
+    {
+      "question": "Il 2 novembre, in Italia, viene celebrata quale festa tradizionale?",
+      "options": ["Tutti i Santi", "Festa dei Morti", "Natale", "Pasqua"],
+      "answer": "Festa dei Morti"
+    },
+    {
+      "question": "Quale scultore italiano futurista è noto per le sue opere dinamiche in bronzo?",
+      "options": ["Umberto Boccioni", "Giacomo Manzù", "Arnaldo Pomodoro", "Marino Marini"],
+      "answer": "Umberto Boccioni"
+    },
+    {
+      "question": "Quale materiale è tradizionalmente usato per la realizzazione dei carri allegorici di Viareggio?",
+      "options": ["Cartapesta", "Legno", "Vetro", "Metallo"],
+      "answer": "Cartapesta"
+    },
+    {
+      "question": "Quale località italiana è rinomata per le sue terme naturali, in particolare per le sorgenti termali di Saturnia?",
+      "options": ["Saturnia", "Montecatini Terme", "Abano Terme", "Salsomaggiore Terme"],
+      "answer": "Saturnia"
+    },
+    {
+      "question": "Quale piatto di pasta semplice è tradizionalmente preparato con pomodoro fresco, basilico e olio d'oliva?",
+      "options": ["Spaghetti al pomodoro", "Penne all'arrabbiata", "Fusilli al pesto", "Rigatoni alla carbonara"],
+      "answer": "Spaghetti al pomodoro"
+    },
+    {
+      "question": "Quale sport invernale che prevede salti con gli sci è molto popolare in Italia?",
+      "options": ["Salto con gli sci", "Sci alpino", "Neveboard", "Biathlon"],
+      "answer": "Salto con gli sci"
+    },
+    {
+      "question": "Quale scrittore italiano ha vinto il Premio Strega nel 2011?",
+      "options": ["Niccolò Ammaniti", "Elena Ferrante", "Paolo Giordano", "Antonio Scurati"],
+      "answer": "Niccolò Ammaniti"
+    },
+    {
+      "question": "Chi è l'autrice della famosa serie di libri per ragazzi 'Geronimo Stilton'?",
+      "options": ["Elisabetta Dami", "Valentina Dami", "Maria Dami", "Francesca Dami"],
+      "answer": "Elisabetta Dami"
+    },
+    {
+      "question": "Qual è l'attuale direttore creativo di Gucci noto per il suo stile innovativo?",
+      "options": ["Alessandro Michele", "Tom Ford", "Miuccia Prada", "Giorgio Armani"],
+      "answer": "Alessandro Michele"
+    },
+    {
+      "question": "Quale antico edificio romano fu convertito in chiesa nel IV secolo d.C.?",
+      "options": ["Pantheon", "Colosseo", "Foro Romano", "Terme di Caracalla"],
+      "answer": "Pantheon"
+    },
+    {
+      "question": "Quale città italiana è celebre per il prosciutto crudo di Parma?",
+      "options": ["Parma", "Bologna", "Napoli", "Milano"],
+      "answer": "Parma"
+    },
+    {
+      "question": "Quale ballo tradizionale del Sud Italia è associato a un antico rituale di guarigione?",
+      "options": ["Tarantella", "Polka", "Mazurka", "Valzer"],
+      "answer": "Tarantella"
+    },
+    {
+      "question": "Quale inventore italiano è considerato padre della radio?",
+      "options": ["Guglielmo Marconi", "Enrico Fermi", "Alessandro Volta", "Antonio Meucci"],
+      "answer": "Guglielmo Marconi"
+    },
+    {
+      "question": "Quale scultore italiano ha creato opere in bronzo, tra cui 'Il Cavaliere'?",
+      "options": ["Marino Marini", "Arnaldo Pomodoro", "Giacomo Manzù", "Tano Festa"],
+      "answer": "Marino Marini"
+    },
+    {
+      "question": "Qual è il nome dell'abbazia, patrimonio UNESCO, famosa per la sua architettura medievale, situata in Italia?",
+      "options": ["Abbazia di Montecassino", "Abbazia di San Miniato al Monte", "Abbazia di Farfa", "Abbazia di San Galgano"],
+      "answer": "Abbazia di Montecassino"
+    },
+    {
+      "question": "Quale prodotto agricolo italiano si ottiene dalla cottura e concentrazione del mosto d'uva?",
+      "options": ["Mosto cotto", "Aceto balsamico", "Vino Novello", "Grappa"],
+      "answer": "Mosto cotto"
+    },
+    {
+      "question": "Quale città del Sud Italia è rinomata per la vivace scena dei murales e della street art?",
+      "options": ["Palermo", "Napoli", "Lecce", "Bari"],
+      "answer": "Palermo"
+    },
+    {
+      "question": "Di che materiale sono realizzati tradizionalmente i mosaici di Ravenna?",
+      "options": ["Vetro", "Pietra", "Ceramica", "Marmo"],
+      "answer": "Vetro"
+    },
+    {
+      "question": "Quale formaggio erborinato italiano è noto per il suo sapore intenso?",
+      "options": ["Gorgonzola", "Asiago", "Grana Padano", "Parmigiano Reggiano"],
+      "answer": "Gorgonzola"
+    },
+    {
+      "question": "Quale dialetto è tipicamente parlato nella città di Napoli?",
+      "options": ["Napoletano", "Siciliano", "Calabrese", "Romano"],
+      "answer": "Napoletano"
+    },
+    {
+      "question": "Quale ente italiano è responsabile della tutela dei beni culturali?",
+      "options": ["Ministero per i Beni e le Attività Culturali", "Ministero dell'Istruzione", "Ministero dell'Interno", "Ministero della Difesa"],
+      "answer": "Ministero per i Beni e le Attività Culturali"
+    },
+    {
+      "question": "Quale pilota italiano è una leggenda del MotoGP?",
+      "options": ["Valentino Rossi", "Marco Simoncelli", "Max Biaggi", "Loris Capirossi"],
+      "answer": "Valentino Rossi"
+    },
+    {
+      "question": "Quale evento tradizionale a Ivrea coinvolge la 'Battaglia delle Arance'?",
+      "options": ["La Battaglia delle Arance", "Il Palio di Ivrea", "La Festa del Tartufo", "Il Carnevale degli Aranci"],
+      "answer": "La Battaglia delle Arance"
+    },
+    {
+      "question": "Quale area della Toscana è famosa per la produzione del vino Chianti?",
+      "options": ["Zona tra Firenze e Siena", "Zona del Chianti Classico", "Zona di Pisa", "Zona del Mugello"],
+      "answer": "Zona tra Firenze e Siena"
+    },
+    {
+      "question": "Quale stilista italiano ha dato il nome al marchio Versace?",
+      "options": ["Gianni Versace", "Donatella Versace", "Miuccia Prada", "Armani"],
+      "answer": "Gianni Versace"
+    },
+    {
+      "question": "Quale poeta, considerato padre del Dolce Stil Novo, ha influenzato la letteratura italiana?",
+      "options": ["Guido Guinizzelli", "Dante Alighieri", "Guido Cavalcanti", "Cino da Pistoia"],
+      "answer": "Guido Guinizzelli"
+    },
+    {
+      "question": "Quale città italiana, patrimonio UNESCO, è rinomata per i suoi mosaici e il Mausoleo di Galla Placidia?",
+      "options": ["Ravenna", "Venezia", "Napoli", "Palermo"],
+      "answer": "Ravenna"
+    },
+    {
+      "question": "Quale formaggio stagionato e duro è tipico dell'Emilia-Romagna?",
+      "options": ["Parmigiano Reggiano", "Pecorino", "Grana Padano", "Provolone"],
+      "answer": "Parmigiano Reggiano"
+    },
+    {
+      "question": "Qual è il lago più grande d'Italia per superficie?",
+      "options": ["Lago di Garda", "Lago Maggiore", "Lago d'Iseo", "Lago Trasimeno"],
+      "answer": "Lago di Garda"
+    },
+    {
+      "question": "Quale città del Sud Italia è nota per la sua vibrante street art?",
+      "options": ["Napoli", "Bari", "Taranto", "Catania"],
+      "answer": "Napoli"
+    },
+    {
+      "question": "Quale dolce tipico piemontese a base di nocciole è conosciuto in tutto il mondo?",
+      "options": ["Gianduiotto", "Baci di dama", "Tiramisù", "Canestrelli"],
+      "answer": "Gianduiotto"
+    },
+    {
+      "question": "Quale celebrazione religiosa si svolge durante la Settimana Santa in Italia?",
+      "options": ["Settimana Santa", "Carnival", "Ferragosto", "Ognissanti"],
+      "answer": "Settimana Santa"
+    },
+    {
+      "question": "Quale celebre pittore rinascimentale è l'autore de 'La Nascita di Venere'?",
+      "options": ["Sandro Botticelli", "Raffaello", "Michelangelo", "Tiziano"],
+      "answer": "Sandro Botticelli"
+    },
+    {
+      "question": "Quale disciplina sciistica è particolarmente pratica nelle valli venete?",
+      "options": ["Sci di fondo", "Sci alpino", "Biathlon", "Slalom"],
+      "answer": "Sci di fondo"
+    },
+    {
+      "question": "Quale città siciliana è famosa per il suo mercato dei fiori?",
+      "options": ["Catania", "Palermo", "Siracusa", "Agrigento"],
+      "answer": "Catania"
+    },
+    {
+      "question": "Quale città è celebre per il panforte, un dolce tradizionale toscano?",
+      "options": ["Siena", "Firenze", "Milano", "Perugia"],
+      "answer": "Siena"
+    },
+    {
+      "question": "Qual è il formaggio a pasta filata tipico della Campania?",
+      "options": ["Mozzarella di Bufala", "Provolone", "Asiago", "Taleggio"],
+      "answer": "Mozzarella di Bufala"
+    },
+    {
+      "question": "Quale artista italiano è associato alla Pop Art grazie alle sue opere di collage e manifesti?",
+      "options": ["Mimmo Rotella", "Mario Schifano", "Enzo Cucchi", "Jannis Kounellis"],
+      "answer": "Mimmo Rotella"
+    },
+    {
+      "question": "Quale sport acquatico, praticato sul Lago di Garda, si svolge con una tavola e una vela?",
+      "options": ["Windsurf", "Wakeboard", "Sci nautico", "Canoa"],
+      "answer": "Windsurf"
+    },
+    {
+      "question": "Quale festival letterario internazionale si tiene annualmente a Mantova?",
+      "options": ["Festivaletteratura", "La Fiera dei Libri", "Premio Strega", "Libri & Idee"],
+      "answer": "Festivaletteratura"
+    },
+    {
+      "question": "Quale prodotto tipico della Val d'Orcia in Toscana è famoso per il suo olio d'oliva extravergine?",
+      "options": ["Olio extravergine d'oliva", "Vino Chianti", "Aceto balsamico", "Formaggio pecorino"],
+      "answer": "Olio extravergine d'oliva"
+    },
+    {
+      "question": "Quale città italiana è celebre per i suoi portici medievali e per il dinamismo del suo centro storico?",
+      "options": ["Bologna", "Firenze", "Genova", "Napoli"],
+      "answer": "Bologna"
+    },
+    {
+      "question": "Chi fu uno dei protagonisti del Risorgimento italiano noto per le sue imprese militari?",
+      "options": ["Giuseppe Garibaldi", "Camillo Benso di Cavour", "Giuseppe Mazzini", "Vittorio Emanuele II"],
+      "answer": "Giuseppe Garibaldi"
+    },
+    {
+      "question": "Quale compositore italiano è celebre per opere come 'La Traviata' e 'Rigoletto'?",
+      "options": ["Giuseppe Verdi", "Gioachino Rossini", "Gaetano Donizetti", "Vincenzo Bellini"],
+      "answer": "Giuseppe Verdi"
+    },
+    {
+      "question": "Quale astronauta italiano è noto per aver partecipato a missioni spaziali internazionali?",
+      "options": ["Umberto Guidoni", "Roberto Vittori", "Paolo Nespoli", "Tutti e tre"],
+      "answer": "Tutti e tre"
+    },
+    {
+      "question": "Quale città italiana è riconosciuta come capitale della moda e del design, ospitando la Milan Fashion Week?",
+      "options": ["Milano", "Roma", "Firenze", "Torino"],
+      "answer": "Milano"
+    },
+     {
+      "question": "Quale poeta italiano ha scritto 'L'infinito'?",
+      "options": ["Giacomo Leopardi", "Giovanni Pascoli", "Gabriele D'Annunzio", "Salvatore Quasimodo"],
+      "answer": "Giacomo Leopardi"
+    },
+    {
+      "question": "Quale regione italiana è famosa per il tartufo bianco d'Alba?",
+      "options": ["Piemonte", "Toscana", "Umbria", "Sicilia"],
+      "answer": "Piemonte"
+    },
+    {
+      "question": "Quale città è nota per il Duomo e la Madonnina?",
+      "options": ["Milano", "Napoli", "Roma", "Torino"],
+      "answer": "Milano"
+    },
+    {
+      "question": "Quale città è famosa per il Ponte Vecchio?",
+      "options": ["Firenze", "Venezia", "Bologna", "Verona"],
+      "answer": "Firenze"
+    },
+    {
+      "question": "Quale regione italiana produce il Brunello di Montalcino?",
+      "options": ["Toscana", "Piemonte", "Sicilia", "Veneto"],
+      "answer": "Toscana"
+    },
+    {
+      "question": "Quale festival musicale si tiene a Ravello?",
+      "options": ["Ravello Festival", "Umbria Jazz", "Festival di Sanremo", "Lucca Summer Festival"],
+      "answer": "Ravello Festival"
+    },
+    {
+      "question": "Quale pittore barocco è noto per il suo uso drammatico di luci e ombre?",
+      "options": ["Caravaggio", "Tiziano", "Raphael", "El Greco"],
+      "answer": "Caravaggio"
+    },
+    {
+      "question": "Quale scrittore italiano ha scritto 'La coscienza di Zeno'?",
+      "options": ["Italo Svevo", "Dino Buzzati", "Giovanni Verga", "Alessandro Manzoni"],
+      "answer": "Italo Svevo"
+    },
+    {
+      "question": "Quale compositore italiano è noto per l'opera 'La Bohème'?",
+      "options": ["Giacomo Puccini", "Giuseppe Verdi", "Gaetano Donizetti", "Arrigo Boito"],
+      "answer": "Giacomo Puccini"
+    },
+    {
+      "question": "Quale salume tipico calabrese è famoso per il suo sapore piccante?",
+      "options": ["'Nduja", "Soppressata", "Cotechino", "Bresaola"],
+      "answer": "'Nduja"
+    },
+    {
+      "question": "Quale regione italiana produce il vino Prosecco?",
+      "options": ["Veneto", "Toscana", "Puglia", "Sicilia"],
+      "answer": "Veneto"
+    },
+    {
+      "question": "Quale città è famosa per i suoi canali e le gondole?",
+      "options": ["Venezia", "Milano", "Roma", "Torino"],
+      "answer": "Venezia"
+    },
+    {
+      "question": "Qual è la 'Città Eterna'?",
+      "options": ["Roma", "Firenze", "Milano", "Torino"],
+      "answer": "Roma"
+    },
+    {
+      "question": "Quale monumento romano fu costruito per ospitare combattimenti ed spettacoli?",
+      "options": ["Il Colosseo", "Il Pantheon", "Il Foro Romano", "Le Terme di Caracalla"],
+      "answer": "Il Colosseo"
+    },
+    {
+      "question": "In quale circuito italiano si svolge il Gran Premio d'Italia di Formula 1?",
+      "options": ["Monza", "Imola", "Misano", "Mugello"],
+      "answer": "Monza"
+    },
+    {
+      "question": "Quale piatto romano è preparato con guanciale, pecorino e pepe nero?",
+      "options": ["Carbonara", "Amatriciana", "Cacio e pepe", "Gricia"],
+      "answer": "Cacio e pepe"
+    },
+    {
+      "question": "Quale area in Campania è rinomata per la produzione della mozzarella di bufala?",
+      "options": ["Caserta", "Salerno", "Benevento", "Avellino"],
+      "answer": "Caserta"
+    },
+    {
+      "question": "Quale scultore del Rinascimento è noto per la statua di Perseo?",
+      "options": ["Benvenuto Cellini", "Donatello", "Michelangelo", "Andrea del Verrocchio"],
+      "answer": "Benvenuto Cellini"
+    },
+    {
+      "question": "Quale regione italiana è famosa per il tartufo nero?",
+      "options": ["Umbria", "Toscana", "Marche", "Lazio"],
+      "answer": "Umbria"
+    },
+    {
+      "question": "Quale famoso dipinto controverso fu realizzato da Caravaggio?",
+      "options": ["La Morte della Vergine", "Il Supper at Emmaus", "La Vocazione di San Matteo", "La Conversione di San Paolo"],
+      "answer": "La Morte della Vergine"
+    },
+    {
+      "question": "Quale dolce tipico del Carnevale di Venezia viene preparato con pasta fritta e zucchero a velo?",
+      "options": ["Frittelle", "Zeppole", "Struffoli", "Chiacchiere"],
+      "answer": "Frittelle"
+    },
+    {
+      "question": "Quale ingrediente è fondamentale nell'amatriciana?",
+      "options": ["Guanciale", "Prosciutto", "Salsiccia", "Pancetta"],
+      "answer": "Guanciale"
+    },
+    {
+      "question": "Quale forma di governo ha l'Italia oggi?",
+      "options": ["Repubblica parlamentare", "Monarchia costituzionale", "Presidenziale", "Federale"],
+      "answer": "Repubblica parlamentare"
+    },
+    {
+      "question": "Quale città è famosa per il Carnevale di Ivrea e la storica Battaglia delle Arance?",
+      "options": ["Ivrea", "Torino", "Milano", "Genova"],
+      "answer": "Ivrea"
+    },
+    {
+      "question": "Qual è il nome dell'antico complesso commerciale romano noto come 'Mercati di Traiano'?",
+      "options": ["Mercati di Traiano", "Foro di Traiano", "Circo Massimo", "Colosseo"],
+      "answer": "Mercati di Traiano"
+    },
+    {
+      "question": "Quale città portuale della costa adriatica è famosa per la sua cucina a base di pesce?",
+      "options": ["Ancona", "Bari", "Trieste", "Rimini"],
+      "answer": "Ancona"
+    },
+    {
+      "question": "Quale formaggio a pasta filata è tradizionalmente usato per preparare la fonduta?",
+      "options": ["Fontina", "Brie", "Cheddar", "Camembert"],
+      "answer": "Fontina"
+    },
+    {
+      "question": "Quale azienda italiana è famosa per le sue lampade di design iconiche?",
+      "options": ["Artemide", "Flos", "Kartell", "Alessi"],
+      "answer": "Artemide"
+    },
+    {
+      "question": "Quale invenzione di Leonardo da Vinci ha ispirato il volo umano?",
+      "options": ["L'elicottero", "La mongolfiera", "L'aeroplano", "Il paracadute"],
+      "answer": "L'elicottero"
+    },
+    {
+      "question": "Quale famoso ponte si trova a Firenze?",
+      "options": ["Ponte Vecchio", "Ponte di Rialto", "Ponte San Lorenzo", "Ponte degli Artisti"],
+      "answer": "Ponte Vecchio"
+    },
+    {
+      "question": "Quale importante via romana è conosciuta come 'Appia Antica'?",
+      "options": ["Via Appia", "Via Flaminia", "Via Aurelia", "Via Egnazia"],
+      "answer": "Via Appia"
+    },
+    {
+      "question": "Quale regione ospita molti dei 'Borghi più belli d'Italia'?",
+      "options": ["Toscana", "Sicilia", "Puglia", "Veneto"],
+      "answer": "Toscana"
+    },
+    {
+      "question": "Quale celebre compositore italiano ha composto la musica per l'opera 'Turandot'?",
+      "options": ["Giacomo Puccini", "Giuseppe Verdi", "Gaetano Donizetti", "Vincenzo Bellini"],
+      "answer": "Giacomo Puccini"
+    },
+    {
+      "question": "Quale città italiana è famosa per il Festival Lirico dell'Arena, dedicato all'opera?",
+      "options": ["Verona", "Milano", "Roma", "Napoli"],
+      "answer": "Verona"
+    },
+    {
+      "question": "Quale formaggio tipico sardo, prodotto con latte di pecora, è rinomato in Italia?",
+      "options": ["Pecorino Sardo", "Fiore Sardo", "Casu marzu", "Ricotta salata"],
+      "answer": "Pecorino Sardo"
+    },
+    {
+      "question": "Quale città è famosa per il Carnevale con maschere e costumi elaborati?",
+      "options": ["Venezia", "Verona", "Milano", "Bologna"],
+      "answer": "Venezia"
+    },
+    {
+      "question": "Quale prodotto gastronomico trae origine dal processo di cottura del mosto d'uva?",
+      "options": ["Mosto cotto", "Aceto balsamico", "Vino Novello", "Grappa"],
+      "answer": "Mosto cotto"
+    },
+    {
+      "question": "Quale città del Sud Italia è rinomata per l'uso della street art nelle sue vie?",
+      "options": ["Palermo", "Napoli", "Lecce", "Bari"],
+      "answer": "Palermo"
+    },
+    {
+      "question": "Di che materiale sono realizzati tradizionalmente i mosaici di Ravenna?",
+      "options": ["Vetro", "Pietra", "Ceramica", "Marmo"],
+      "answer": "Vetro"
+    },
+    {
+      "question": "Quale formaggio erborinato italiano è noto per il suo sapore deciso?",
+      "options": ["Gorgonzola", "Asiago", "Grana Padano", "Parmigiano Reggiano"],
+      "answer": "Gorgonzola"
+    },
+    {
+      "question": "Quale dialetto è tipicamente parlato a Napoli?",
+      "options": ["Napoletano", "Siciliano", "Calabrese", "Romano"],
+      "answer": "Napoletano"
+    },
+    {
+      "question": "Quale ente italiano tutela i beni culturali?",
+      "options": ["Ministero per i Beni e le Attività Culturali", "Ministero dell'Istruzione", "Ministero dell'Interno", "Ministero della Difesa"],
+      "answer": "Ministero per i Beni e le Attività Culturali"
+    },
+    {
+      "question": "Quale leggenda dello sport italiano ha collezionato numerosi titoli in MotoGP?",
+      "options": ["Valentino Rossi", "Marco Simoncelli", "Max Biaggi", "Loris Capirossi"],
+      "answer": "Valentino Rossi"
+    },
+    {
+      "question": "Quale tradizione a Ivrea prevede la celebre 'Battaglia delle Arance'?",
+      "options": ["La Battaglia delle Arance", "Il Palio", "La Festa del Tartufo", "Il Carnevale degli Aranci"],
+      "answer": "La Battaglia delle Arance"
+    },
+    {
+      "question": "Quale area tra Firenze e Siena è celebre per il vino Chianti?",
+      "options": ["Zona tra Firenze e Siena", "Zona del Chianti Classico", "Zona di Pisa", "Zona del Mugello"],
+      "answer": "Zona tra Firenze e Siena"
+    },
+    {
+      "question": "Quale stilista italiano ha dato il nome al marchio Versace?",
+      "options": ["Gianni Versace", "Donatella Versace", "Miuccia Prada", "Armani"],
+      "answer": "Gianni Versace"
+    },
+    {
+      "question": "Quale poeta, considerato padre del Dolce Stil Novo, ha ispirato la poesia italiana?",
+      "options": ["Guido Guinizzelli", "Dante Alighieri", "Guido Cavalcanti", "Cino da Pistoia"],
+      "answer": "Guido Guinizzelli"
+    },
+    {
+      "question": "Quale città, patrimonio UNESCO, è famosa per i suoi antichi mosaici e il Mausoleo di Galla Placidia?",
+      "options": ["Ravenna", "Venezia", "Napoli", "Palermo"],
+      "answer": "Ravenna"
+    },
+    {
+      "question": "Quale formaggio stagionato tipico dell'Emilia-Romagna è conosciuto in tutto il mondo?",
+      "options": ["Parmigiano Reggiano", "Pecorino", "Grana Padano", "Provolone"],
+      "answer": "Parmigiano Reggiano"
+    },
+    {
+      "question": "Qual è il lago più grande d'Italia per superficie?",
+      "options": ["Lago di Garda", "Lago Maggiore", "Lago d'Iseo", "Lago Trasimeno"],
+      "answer": "Lago di Garda"
+    },
+    {
+      "question": "Quale città meridionale è rinomata per la sua vibrante street art?",
+      "options": ["Napoli", "Bari", "Taranto", "Catania"],
+      "answer": "Napoli"
+    },
+    {
+      "question": "Qual è il formaggio a base di nocciole tipico del Piemonte?",
+      "options": ["Gianduiotto", "Baci di dama", "Tiramisù", "Canestrelli"],
+      "answer": "Gianduiotto"
+    },
+    {
+      "question": "Quale celebrazione religiosa avviene durante la Settimana Santa in Italia?",
+      "options": ["La Settimana Santa", "Carnival", "Ferragosto", "Ognissanti"],
+      "answer": "La Settimana Santa"
+    },
+    {
+      "question": "Chi ha dipinto 'La Nascita di Venere'?",
+      "options": ["Sandro Botticelli", "Raffaello", "Michelangelo", "Tiziano"],
+      "answer": "Sandro Botticelli"
+    },
+    {
+      "question": "Quale disciplina sciistica è particolarmente praticata nelle Dolomiti?",
+      "options": ["Sci di fondo", "Sci alpino", "Biathlon", "Slalom"],
+      "answer": "Sci di fondo"
+    },
+    {
+      "question": "Quale città siciliana è famosa per il suo mercato dei fiori?",
+      "options": ["Catania", "Palermo", "Siracusa", "Agrigento"],
+      "answer": "Catania"
+    },
+    {
+      "question": "Quale città è rinomata per il festival del 'Panforte', un dolce tradizionale toscano?",
+      "options": ["Siena", "Firenze", "Milano", "Perugia"],
+      "answer": "Siena"
+    },
+    {
+      "question": "Quale formaggio a pasta filata è tipico della Campania?",
+      "options": ["Mozzarella di Bufala", "Provolone", "Asiago", "Taleggio"],
+      "answer": "Mozzarella di Bufala"
+    },
+    {
+      "question": "Quale artista italiano è noto per le sue opere di collage e installazioni provocatorie?",
+      "options": ["Maurizio Cattelan", "Michelangelo Pistoletto", "Mario Merz", "Alighiero Boetti"],
+      "answer": "Maurizio Cattelan"
+    },
+    {
+      "question": "Quale condimento tipico della Liguria è preparato con basilico, pinoli, aglio e parmigiano?",
+      "options": ["Pesto", "Ragù", "Sugo", "Acquacotta"],
+      "answer": "Pesto"
+    },
+    {
+      "question": "Quale città del Sud Italia è famosa per il suo mercato tradizionale e la vivacità artigianale?",
+      "options": ["Palermo", "Bologna", "Firenze", "Verona"],
+      "answer": "Palermo"
+    },
+    {
+      "question": "Quale innovazione del design italiano ha influenzato l'arredamento nel XX secolo?",
+      "options": ["Il design industriale italiano", "Il design Bauhaus", "Lo stile futurista", "Il Movimento Memphis"],
+      "answer": "Il design industriale italiano"
+    },
+    {
+      "question": "Quale artista contemporaneo italiano è noto per le sue opere provocatorie e ironiche, spesso basate su soggetti iconici?",
+      "options": ["Maurizio Cattelan", "Michelangelo Pistoletto", "Mario Merz", "Alighiero Boetti"],
+      "answer": "Maurizio Cattelan"
+    },
+    {
+      "question": "Quale piatto tipico della cucina ligure è preparato con basilico, pinoli, aglio e olio d'oliva?",
+      "options": ["Pesto", "Ragù", "Zuppa di pesce", "Acquacotta"],
+      "answer": "Pesto"
+    },
+    {
+      "question": "Quale antica via romana è conosciuta come 'l'Appia Antica'?",
+      "options": ["Via Appia", "Via Flaminia", "Via Aurelia", "Via Egnazia"],
+      "answer": "Via Appia"
+    },
+    {
+      "question": "Quale scienziato italiano ha contribuito allo sviluppo della fisica quantistica?",
+      "options": ["Enrico Fermi", "Ettore Majorana", "Giuseppe Occhialini", "Bruno Pontecorvo"],
+      "answer": "Enrico Fermi"
+    },
+    {
+      "question": "Quale città è celebre per il suo patrimonio artistico, con il Duomo e la Basilica di Santa Croce?",
+      "options": ["Firenze", "Roma", "Milano", "Bologna"],
+      "answer": "Firenze"
+    },
+    {
+      "question": "Quale architetto internazionale ha progettato il Museo MAXXI a Roma?",
+      "options": ["Zaha Hadid", "Renzo Piano", "Carlo Scarpa", "Gae Aulenti"],
+      "answer": "Zaha Hadid"
+    }
+  ]
+}
