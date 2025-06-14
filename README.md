@@ -2,6 +2,8 @@
 
 **Il Pranzo è Servito – Digital Edition** is an interactive web-based quiz game developed by **Bocaletto Luca**. In this game, you answer general knowledge questions within 30 seconds to collect five courses—First, Second, Cheese, Dessert, and Fruit—and complete your menu. The game ends either when you successfully complete the menu or when you accumulate 10 mistakes.
 
+[![Test Online](https://img.shields.io/badge/Test%20Online-Click%20Here-brightgreen?style=for-the-badge)](https://bocaletto-luca.github.io/Il-Pranzo-e-Servito/)
+
 ## Features
 
 - **Timed Questions:** Each question must be answered within 30 seconds.
